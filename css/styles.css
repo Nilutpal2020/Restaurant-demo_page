@@ -117,6 +117,9 @@ body {
 
 /* END HEADER DESIGN */
 
+
+/* START OF HOME TILES */
+
 .jumbotron {
     display: flex;
     justify-content: center;
@@ -174,6 +177,53 @@ body {
 }
 
 
+/* END OF HOME TILES */
+
+
+/* FOOTER START */
+
+.card-footer {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #222;
+    color: #ccc;
+    border-top: 0;
+}
+
+#hours,
+#address {
+    line-height: 1.8em;
+}
+
+#hours>span,
+#address>span {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8em;
+}
+
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials blockquote:nth-child(even) {
+    margin-top: 25px;
+}
+
+#copy-ruling {
+    background-color: #ccc;
+}
+
+
+/* FOOTER END */
+
+
 /* END OF HOME PAGE */
 
 
@@ -222,6 +272,13 @@ body {
         box-shadow: 0 0 50px #3F0C1F;
         border: 2px solid #3F0C1F;
     } */
+    #menu-tile,
+    #specials-tile,
+    #map-tile {
+        height: 250px;
+        width: 100%;
+        margin: 0 auto 15px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -246,6 +303,13 @@ body {
     }
     .navbar-brand p img {
         height: 20px;
+    }
+    #menu-tile,
+    #specials-tile,
+    #map-tile {
+        height: 250px;
+        width: 100%;
+        margin: 0 auto 15px;
     }
 }
 
@@ -274,5 +338,13 @@ body {
     #map-tile {
         width: 100%;
         margin: 0 auto 15px;
+    }
+    .card-footer {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .card-footer section hr {
+        background-color: #ccc;
+        width: 50%;
     }
 }
